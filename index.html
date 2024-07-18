@@ -84,22 +84,15 @@
     <!-- Masthead-->
     <header class="masthead">
       <div class="container">
-        <div class="masthead-subheading">
+        <div>
+          <img class="imagenAgua" src="assets/img/aguahoy.png" alt="" />
+        </div>
+
+        <div class="masthead-subheading" style="font-weight: bold">
           Somos AguaHoy, una empresa líder dedicada a la perforación de suelos.
           En el sector domiciliario, industrial y agrario.
         </div>
-        <div class="masthead-heading racing-sans-one-regular">AguaHoy</div>
-        <div
-          class="masthead-subheading"
-          style="
-            text-align: center;
-            margin-top: -5%;
-            margin-bottom: 6px;
-            font-weight: bold;
-          "
-        >
-          Perforaciones
-        </div>
+        <br />
         <a class="btn btn-primary btn-xl text-uppercase" href="#contacto"
           >Contactanos</a
         >
@@ -151,7 +144,11 @@
                       Calcular precio aproximado
                     </button>
                   </form>
-                  <div class="mt-3 azul" id="precioTotal"></div>
+                  <div
+                    style="font-weight: bold"
+                    class="mt-3 azul"
+                    id="precioTotal"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -173,16 +170,27 @@
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Turnos disponibles</h2>
-          <!-- calendario-->
-          <div>calendario aca</div>
-          <div>Reservá tu turno mediante Whatsapp</div>
+          <h3
+            class="section-subheading"
+            style="font-size: 20px; margin-bottom: 2rem; font-weight: bold"
+          >
+            Consultá y reservá tu turno mediante Whatsapp a continuación.
+          </h3>
           <div class="d-flex justify-content-center">
             <a
-              class="btn btn-dark btn-social mx-2"
-              href="LINK A WSP"
+              class="btn btn-dark btn-social-ws mx-2"
+              href="https://wa.me/542214090999?text=Hola%20buenas%20tardes,%20me%20gustaría%20saber%20mas%20información%20y%20consultar%20los%20turnos%20disponibles."
               aria-label="WhatsApp"
-              ><i class="fab fa-whatsapp" style="font-size: 24px"></i
+              ><i class="fab fa-whatsapp" style="font-size: 35px"></i
             ></a>
+            <p class="nombresWs">Pablo</p>
+            <a
+              class="btn btn-dark btn-social-ws mx-2"
+              href="https://wa.me/542216059873?text=Hola%20buenas%20tardes,%20me%20gustaría%20saber%20mas%20información%20y%20consultar%20los%20turnos%20disponibles."
+              aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp" style="font-size: 35px"></i
+            ></a>
+            <p class="nombresWs">Gabriel</p>
           </div>
         </div>
       </div>
@@ -193,7 +201,10 @@
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Servicios</h2>
-          <h3 class="section-subheading blanco">
+          <h3
+            class="section-subheading blanco"
+            style="font-weight: bold; font-size: 20px"
+          >
             Estos son todos los servicios que realizamos.
           </h3>
         </div>
@@ -205,9 +216,9 @@
             </span>
             <h4 class="my-3">Estudio hidrogeológico de aguas subterraneas</h4>
             <p class="blanco">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              maxime quam architecto quo inventore harum ex magni, dicta
-              impedit.
+              Evaluación de la cantidad, calidad y dinámica del agua subterránea
+              en una región. Análisis del flujo del agua y evaluación de recarga
+              y descarga.
             </p>
           </div>
           <div class="col-md-4">
@@ -227,9 +238,26 @@
             </span>
             <h4 class="my-3">Diseño e implementación de sistemas de riego</h4>
             <p class="blanco">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              maxime quam architecto quo inventore harum ex magni, dicta
-              impedit.
+              Planificación y establecimiento de estructuras para distribuir
+              agua eficientemente a cultivos o áreas verdes. Esto incluye
+              seleccionar el tipo de sistema de riego (por aspersión, goteo,
+              etc.)
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-tint fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">
+              Instalación e implementación de Freatrimetros (AGRO)
+            </h4>
+            <p class="blanco">
+              Colocación y utilización de dispositivos para medir el nivel del
+              agua subterránea en zonas agrícolas. Ayudando a monitorear el
+              estado de los acuíferos, optimizar el riego, y gestionar los
+              recursos hídricos de manera sostenible para mejorar la producción
+              agrícola.
             </p>
           </div>
         </div>
@@ -240,18 +268,21 @@
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Trabajá con nosotros</h2>
-          <h3 class="section-subheading azul">
+          <h3
+            class="section-subheading azul"
+            style="font-weight: bold; font-size: 20px"
+          >
             Completá el siguiente formulario y enviá tus datos para poder
             tenerte en cuenta.
           </h3>
           <!-- form-->
-          <div class="row">
-            <div class="newsletter-form col-md-12">
+          <div class="rowForm">
+            <div class="form-container newsletter-form col-md-12">
               <form id="jobApplicationForm" class="col-md-6 col-md-offset-2">
                 <div class="form-group has-feedback">
                   <label
                     for="first-name"
-                    class="control-label col-md-3 col-md-offset-1"
+                    class="labelBlue control-label col-md-3 col-md-offset-1"
                     >Nombre</label
                   >
                   <div class="input-group col-md-8">
@@ -261,7 +292,7 @@
                     <input
                       id="first-name"
                       type="text"
-                      class="form-control"
+                      class="labelInput form-control"
                       name="first-name"
                       placeholder="Nombre"
                       required
@@ -271,7 +302,7 @@
                 <div class="form-group has-feedback">
                   <label
                     for="last-name"
-                    class="col-md-3 control-label col-md-offset-1"
+                    class="labelBlue col-md-3 control-label col-md-offset-1"
                     >Apellido</label
                   >
                   <div class="input-group col-md-8">
@@ -281,7 +312,7 @@
                     <input
                       id="last-name"
                       type="text"
-                      class="form-control"
+                      class="labelInput form-control"
                       name="last-name"
                       placeholder="Apellido"
                       required
@@ -291,7 +322,7 @@
                 <div class="form-group has-feedback">
                   <label
                     for="email"
-                    class="col-md-3 control-label col-md-offset-1"
+                    class="labelBlue col-md-3 control-label col-md-offset-1"
                     >Correo electronico</label
                   >
                   <div class="input-group col-md-8">
@@ -301,7 +332,7 @@
                     <input
                       id="email"
                       type="email"
-                      class="form-control"
+                      class="labelInput form-control"
                       name="email"
                       placeholder="E-Mail"
                       required
@@ -311,7 +342,7 @@
                 <div class="form-group has-feedback">
                   <label
                     for="profession"
-                    class="col-md-3 control-label col-md-offset-1"
+                    class="labelBlue col-md-3 control-label col-md-offset-1"
                     >Profesión</label
                   >
                   <div class="input-group col-md-8">
@@ -321,7 +352,7 @@
                     <input
                       id="profession"
                       type="text"
-                      class="form-control"
+                      class="labelInput form-control"
                       name="profession"
                       placeholder="Profesión"
                       required
@@ -331,7 +362,7 @@
                 <div class="form-group has-feedback">
                   <label
                     for="phone"
-                    class="col-md-3 control-label col-md-offset-1"
+                    class="labelBlue col-md-3 control-label col-md-offset-1"
                     >Teléfono</label
                   >
                   <div class="input-group col-md-8">
@@ -341,7 +372,7 @@
                     <input
                       id="phone"
                       type="tel"
-                      class="form-control"
+                      class="labelInput form-control"
                       name="phone"
                       placeholder="Teléfono"
                       pattern="[0-9]+"
@@ -352,6 +383,7 @@
                   <span
                     id="phone-validation"
                     class="help-block col-md-8 col-md-offset-4"
+                    style="font-weight: bold"
                     >Por favor, ingrese su número telefonico, sin el prefijo
                     +54.
                   </span>
@@ -436,9 +468,9 @@
         <div class="d-flex justify-content-center">
           <a
             class="btn btn-dark btn-social mx-2"
-            href="LINK A WSP"
+            href="https://wa.me/542214090999?text=Hola%20buenas%20tardes,%20me%20gustaría%20saber%20mas%20información%20y%20consultar%20los%20turnos%20disponibles."
             aria-label="WhatsApp"
-            ><i class="fab fa-whatsapp" style="font-size: 24px"></i
+            ><i class="fab fa-whatsapp" style="font-size: 25px"></i
           ></a>
           <a
             class="btn btn-dark btn-social mx-2"
@@ -473,7 +505,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4 mx-auto my-auto">
-            Copyright &copy; AguaHoy 2024
+            Copyright &copy; AguaHoy <span id="current-year"></span>
           </div>
         </div>
       </div>
