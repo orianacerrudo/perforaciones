@@ -147,11 +147,24 @@ body {
 .cardCotizacion {
   border: 8px solid #00005c !important;
   border-radius: 35px !important;
+  padding: 20px;
   background-color: white !important;
 }
 .nombresWs {
   align-self: self-end;
   color: #00005c;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nombresMail {
+  align-self: self-end;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nombresEmergencias {
+  align-self: self-end;
+  color: red;
   font-size: 20px;
   font-weight: bold;
 }
@@ -171,6 +184,13 @@ body {
 .labelBlue {
   font-weight: bold;
   color: #00005c;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+#jobApplicationSubmit {
+  width: 50%; /* Ajusta el tamaño del botón */
+  padding: 10px;
 }
 .labelInput {
   border-radius: 15px;
@@ -747,6 +767,7 @@ progress {
   margin-left: auto;
 }
 
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
@@ -754,6 +775,20 @@ progress {
   }
 }
 @media (min-width: 768px) {
+  .imagenAgua {
+    width: 35%;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 1.60rem;
+}
+.container {
+  padding: 0 10%;
+}
+.cardCotizacion {
+  border: 8px solid #00005c !important;
+  border-radius: 35px !important;
+  background-color: white !important;
+}
   .container-md,
   .container-sm,
   .container {
@@ -761,13 +796,31 @@ progress {
   }
   .text-primary {
     --bs-text-opacity: 1;
-    color: #2d86f4 !important;
+    color: #00005c !important;
   }
   .racing-sans-one-regular {
     font-size: 6.25rem !important;
   }
+  .card-body {
+    padding: 30px;
+  }
+  #jobApplicationForm {
+    max-width: 600px;
+    margin: 0 auto; /* Centra el formulario */
+  }
 }
+/* Fondo para pantallas móviles y tablets */
+#mainNav {
+  background-image: url("/css/aguahoy-banner-degrade2.jpg"); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 992px) {
+  #mainNav {
+    background-image: none; /* Elimina la imagen en pantallas grandes */
+    background-color: #00005c; /* Color azul de fondo */
+  }
   .container-lg,
   .container-md,
   .container-sm,
@@ -2953,6 +3006,9 @@ fieldset:disabled .btn {
   margin-bottom: 0;
   list-style: none;
 }
+nav {
+  background-color: #00005c; /* Fondo azul por defecto */
+}
 
 .nav-link {
   display: block;
@@ -3115,10 +3171,7 @@ fieldset:disabled .btn {
   text-decoration: none;
   white-space: nowrap;
 }
-.navbar-brand:hover,
-.navbar-brand:focus {
-  color: var(--bs-navbar-brand-hover-color);
-}
+
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
@@ -10390,8 +10443,40 @@ h3.section-heading.text-uppercase {
   font-weight: 700;
 }
 .btn-social-ws {
+  background-color: green !important; 
   height: 3.5rem;
   width: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+.btn-social-ws2 {
+  background-color: green;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+.btn-social-mail {
+  background-color: #00005c; 
+  height: 3.5rem;
+  width: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+.btn-social-emergencia {
+  background-color: red !important; 
+  height: 3.5rem;
+  width: 3.5rem;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -10408,11 +10493,38 @@ h3.section-heading.text-uppercase {
   padding: 0;
   border-radius: 100%;
 }
+.btn-social-ig {
+  background: linear-gradient(45deg, 
+  #f09433 0%,  /* Naranja */
+  #e6683c 25%, /* Naranja-Rosa */
+  #dc2743 50%, /* Rosa */
+  #cc2366 75%, /* Violeta */
+  #bc1888 100%  /* Violeta oscuro */
+  ); ;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+.btn-social-tt {
+  background-color: #000;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
 
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #00005c;
+  background-image: url("/css/aguahoy-banner-degrade2.jpg");
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10426,7 +10538,6 @@ h3.section-heading.text-uppercase {
   color: #00005c;
 }
 #mainNav .navbar-brand {
-  color: white;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10439,7 +10550,8 @@ h3.section-heading.text-uppercase {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: white;
+  font-weight: bold;
+  color: #00005c;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
